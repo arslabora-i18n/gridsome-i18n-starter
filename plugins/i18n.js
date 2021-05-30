@@ -16,6 +16,6 @@ module.exports = {
     enablePathRewrite: true,
     rewriteDefaultLanguage: true,
     enablePathGeneration: false,
-    routes: require('../locales/routes.js')
+    routes: require('../src/routes.js')
   }
 }
