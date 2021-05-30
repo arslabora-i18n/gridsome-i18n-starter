@@ -5,6 +5,25 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'Gridsome i18n Boilerplate',
+  plugins: [
+    {
+      use: "gridsome-plugin-i18n",
+      options: {
+        locales: [
+          'en-US',
+          'it-IT'
+        ],
+        pathAliases: {
+          'en-US': 'en',
+          'it-IT': 'it'
+        },
+        fallbackLocale: 'en-US',
+        defaultLocale: 'en-US',
+        enablePathRewrite: true,
+        rewriteDefaultLanguage: true,
+        enablePathGeneration: true
+      }
+    }
+  ]
 }
