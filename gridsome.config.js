@@ -1,29 +1,9 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+// Require i18n configuration
+const i18n = require('./src/plugins/i18n')
 
 module.exports = {
   siteName: 'Gridsome i18n Boilerplate',
   plugins: [
-    {
-      use: "gridsome-plugin-i18n",
-      options: {
-        locales: [
-          'en-US',
-          'it-IT'
-        ],
-        pathAliases: {
-          'en-US': 'en',
-          'it-IT': 'it'
-        },
-        fallbackLocale: 'en-US',
-        defaultLocale: 'en-US',
-        enablePathRewrite: true,
-        rewriteDefaultLanguage: true,
-        enablePathGeneration: true
-      }
-    }
+    i18n
   ]
 }
