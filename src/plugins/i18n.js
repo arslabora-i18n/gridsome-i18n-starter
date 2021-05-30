@@ -3,11 +3,13 @@ module.exports = {
   options: {
     locales: [
       'en-US',
-      'it-IT'
+      'it-IT',
+      'pt-BR'
     ],
     pathAliases: {
       'en-US': 'en',
-      'it-IT': 'it'
+      'it-IT': 'it',
+      'pt-BR': 'pt'
     },
     fallbackLocale: 'en-US',
     defaultLocale: 'en-US',
