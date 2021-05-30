@@ -15,7 +15,7 @@ module.exports = {
       component: './src/pages/Index.vue'
     },
     {
-      path: '/it/chi-siamo/',
+      path: '/it/about/',
       component: './src/pages/About.vue'
     }
   ],
@@ -25,7 +25,7 @@ module.exports = {
       component: './src/pages/Index.vue'
     },
     {
-      path: '/pt/quem-somos/',
+      path: '/pt/about/',
       component: './src/pages/About.vue'
     }
   ]
