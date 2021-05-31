@@ -1,4 +1,7 @@
 { 
   "/about": "quem-somos",
-  "welcome": "Benvindo a Gridsome i18n!"
+  "welcome": "Benvindo a Gridsome i18n!",
+  "titles": {
+    "about-us": "Sobre nos"
+  }
 }
