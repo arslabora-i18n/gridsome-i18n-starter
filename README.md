@@ -1,6 +1,14 @@
 # Gridsome i18n Starter
 
-Implement a working i18n boilerplate with all functionalities, as strings and path translations, hot reload and other goodies
+Implement a working i18n boilerplate with all functionalities, as strings and path translations, hot reload and other goodies.
+
+References:
+
+- [Build Your Static Blog With Gridsome](https://mannes.tech/gridsome-tutorial/)
+- [The Answers to All your Questions about Gridsome Localization](https://phrase.com/blog/posts/gridsome-localization/)
+- [How to set up Tailwind CSS with gridsome
+](https://webdevetc.com/blog/tailwind-css-with-gridsome/)
+
 
 ## Properties
 
@@ -87,6 +95,10 @@ module.exports = {
 }
 ```
 
-In your navigation, path must be referred as: `<g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>`, where `$tp` link to the localised routes (en, it,... ), and `$t` get the path translation defined in each locale dictionary (usually JSON files).
+In your navigation, path must be referred as: `<g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>`, where `$tp` link to the localised routes (en, it,... ), and `$t` get the path translated string defined in each locale dictionary (usually JSON files).
 
-The LocaleSwitcher.vue components uses, to refer the localised path, the new $context.slug property, so when you are navigating to a page which has a localised slug, if you change the language, the correct slug is retrieved.
+The LocaleSwitcher.vue components uses, to refer the localised path, `$context.slug` property, so when you are navigating to a page which has a localised slug, if you change the language, the correct slug is retrieved.
+
+## Addons
+
+- [Google Fonts Helper](https://github.com/majodev/google-webfonts-helper)
