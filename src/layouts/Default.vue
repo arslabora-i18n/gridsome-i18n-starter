@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout prose prose-green prose-lg">
     <header class="header">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
