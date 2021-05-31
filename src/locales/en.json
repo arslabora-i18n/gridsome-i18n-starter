@@ -1,6 +1,4 @@
-{
-  "welcome": "Welcome to Gridsome i18n!",
-  "pages": {
-      "about": "about us"
-    }  
+{ 
+  "/about": "about-us",
+  "welcome": "Welcome to Gridsome i18n!"  
 }

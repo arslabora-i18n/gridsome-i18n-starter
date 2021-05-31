@@ -15,8 +15,10 @@ export default {
   },
   methods: {
     localeChanged () {
-      this.$router.push({
-        path: this.$tp(this.$route.path, this.currentLocale, true)
+      this.$router.push({        
+        path: this.$tp( // get the translated path
+          this.$t(this.$context.slug, this.currentLocale), // using slugs translations
+          this.currentLocale, true)        
       })
     }
   }

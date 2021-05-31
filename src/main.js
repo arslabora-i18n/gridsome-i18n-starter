@@ -5,7 +5,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   
-  // Require translations with hot reload
+  // Allow for hot-reload of translations
   appOptions.i18n.setLocaleMessage('en-US',
   require('./locales/en.json'))
   appOptions.i18n.setLocaleMessage('it-IT',

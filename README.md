@@ -1,14 +1,92 @@
-# Default starter for Gridsome
+# Gridsome i18n Starter
 
-This is the project you get when you run `gridsome create new-project`.
+Implement a working i18n boilerplate with all functionalities, as strings and path translations, hot reload and other goodies
 
-### 1. Install Gridsome CLI tool if you don't have
+## Properties
 
-`npm install --global @gridsome/cli`
+This boilerplate uses the modification upon the work of @giuseppeaiello: it provide an extension of `$context`, with a `slug` property, so to link path translations.
 
-### 2. Create a Gridsome project
+The `i18n` plugin is configured so that the routes must be manually managed. This is very powerfull and quite vue-alike:
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+**i18n.js**:
+```js
+module.exports = {
+  use: "gridsome-plugin-i18n",
+  options: {
+    locales: [
+      'en-US',
+      'it-IT',
+      'pt-BR'
+    ],
+    pathAliases: {
+      'en-US': 'en',
+      'it-IT': 'it',
+      'pt-BR': 'pt'
+    },
+    fallbackLocale: 'en-US',
+    defaultLocale: 'en-US',
+    enablePathRewrite: true,
+    rewriteDefaultLanguage: true,
+    enablePathGeneration: false,
+    routes: require('../src/routes.js')
+  }
+}
+```
+
+**routes.js**:
+```js
+module.exports = {
+  "en-US": [
+    {
+      path: '/en',
+      component: './src/pages/Index.vue',
+      context: {
+        slug: '/'
+      }
+    },
+    {
+      path: '/en/about-us/',
+      component: './src/pages/About.vue',
+      context: {
+        slug: '/about'
+      }
+    }
+  ],
+  "it-IT": [
+    {
+      path: '/it',
+      component: './src/pages/Index.vue',
+      context: {
+        slug: '/'
+      }
+    },
+    {
+      path: '/it/chi-siamo/',
+      component: './src/pages/About.vue',
+      context: {
+        slug: '/about'
+      }
+    }
+  ],
+  "pt-BR": [
+    {
+      path: '/pt',
+      component: './src/pages/Index.vue',
+      context: {
+        slug: '/'
+      }
+    },
+    {
+      path: '/pt/quem-somos/',
+      component: './src/pages/About.vue',
+      context: {
+        slug: '/about'
+      }
+    }
+  ]
+}
+```
+
+In your navigation, path must be referred as: `<g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>`, where `$tp` link to the localised routes (en, it,... ), and `$t` get the path translation defined in each locale dictionary (usually JSON files).
+
+The LocaleSwitcher.vue components uses, to refer the localised path, the new $context.slug property, so when you are navigating to a page which has a localised slug, if you change the language, the correct slug is retrieved.

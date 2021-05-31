@@ -9,5 +9,8 @@
   "dependencies": {
     "gridsome": "^0.7.0",
     "gridsome-plugin-i18n": "^1.6.0"
+  },
+  "devDependencies": {
+    "sirv-cli": "^1.0.12"
   }
 }
