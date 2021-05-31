@@ -98,3 +98,7 @@ module.exports = {
 In your navigation, path must be referred as: `<g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>`, where `$tp` link to the localised routes (en, it,... ), and `$t` get the path translated string defined in each locale dictionary (usually JSON files).
 
 The LocaleSwitcher.vue components uses, to refer the localised path, `$context.slug` property, so when you are navigating to a page which has a localised slug, if you change the language, the correct slug is retrieved.
+
+## Addons
+
+- [Google Fonts Helper](https://github.com/majodev/google-webfonts-helper)

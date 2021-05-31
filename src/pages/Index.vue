@@ -10,7 +10,7 @@
         excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
         Dolores, aperiam non officia eos quod asperiores
       </p>
-      <g-image src="http://placeimg.com/1600/900/city" />
+      <g-image src="http://placeimg.com/1600/900/animals" />
       <p>ab voluptatem voluptatem</p>      
       <p>
         Sit velit vel autem autem ex dolor quam. At fuga ut veritatis sequi

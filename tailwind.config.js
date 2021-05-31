@@ -12,7 +12,12 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'atma': ['Atma', 'serif'],
+        'lato': ['Lato', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},

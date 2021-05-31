@@ -8,7 +8,7 @@
         rerum illum odit fugit assumenda rem dolores inventore iste
         reprehenderit maxime! Iusto.
       </p>
-      <g-image src="http://placeimg.com/1600/900/fashion" />
+      <g-image src="http://placeimg.com/1600/900/nature" />
       <p>
         Totam eum ad recusandae qui deserunt aut placeat maxime consequatur.
         Suscipit aut consequatur distinctio asperiores. Voluptatem eaque rem
