@@ -13,7 +13,14 @@ module.exports = {
       context: {
         slug: '/about'
       }
-    }
+    },
+    {
+      path: '/en/postcss/',
+      component: './src/pages/PostCSS.vue',
+      context: {
+        slug: '/postcss'
+      }
+    },
   ],
   "it-IT": [
     {
@@ -29,7 +36,14 @@ module.exports = {
       context: {
         slug: '/about'
       }
-    }
+    },
+    {
+      path: '/it/postcss/',
+      component: './src/pages/PostCSS.vue',
+      context: {
+        slug: '/postcss'
+      }
+    },
   ],
   "pt-BR": [
     {
@@ -45,6 +59,13 @@ module.exports = {
       context: {
         slug: '/about'
       }
-    }
+    },
+    {
+      path: '/pt/postcss/',
+      component: './src/pages/PostCSS.vue',
+      context: {
+        slug: '/postcss'
+      }
+    },
   ]
 }

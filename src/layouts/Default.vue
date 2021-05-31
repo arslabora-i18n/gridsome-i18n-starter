@@ -10,6 +10,7 @@
       <nav class="nav">
         <g-link class="nav__link" :to="$tp('/')">Home</g-link>
         <g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>
+        <g-link class="nav__link" :to="$tp($t('/postcss'))">PostCSS</g-link>
       </nav>
     </header>
     <slot/>
