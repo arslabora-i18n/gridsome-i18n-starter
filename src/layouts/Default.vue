@@ -1,9 +1,6 @@
 <template>
   <div class="layout prose prose-green prose-lg">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+    <header class="header">      
       <div>
         <locale-switcher></locale-switcher>
       </div>

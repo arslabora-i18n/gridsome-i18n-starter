@@ -1,7 +1,12 @@
 <template>
   <Layout>
     <div class="container max-w-screen-md mx-auto">
-      <h1>LostGrid</h1>
+
+      <h1>PostCSS</h1>
+      <p>We can register and use any postcss plugin we want. This boilerplate come with some plugins already configured.</p>
+      
+      <h2>LostGrid</h2>
+
       <article>
         <h3>Basic Columns</h3>
         <section>
