@@ -2,7 +2,7 @@
   <Layout>
     <div>
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-      
+
       <h1>{{ $t("welcome") }}</h1>
 
       <p>
@@ -10,12 +10,12 @@
         excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
         Dolores, aperiam non officia eos quod asperiores
       </p>
-      <g-image src="http://placeimg.com/1600/900/animals" />
-      <p>ab voluptatem voluptatem</p>      
+      <g-image src="~/assets/images/dolphins.jpg" width="900" />
+      <p>ab voluptatem voluptatem</p>
       <p>
         Sit velit vel autem autem ex dolor quam. At fuga ut veritatis sequi
         optio rerum omnis odio. Minus sequi nisi odio et. Qui delectus nulla
-        explicabo odio aperiam unde pariatur.        
+        explicabo odio aperiam unde pariatur.
       </p>
     </div>
 
@@ -45,6 +45,6 @@ export default {
 
 <style>
 .home-links a {
-  @apply mr-2  
+  @apply mr-2;
 }
 </style>
