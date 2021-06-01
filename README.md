@@ -6,9 +6,8 @@ References:
 
 - [Build Your Static Blog With Gridsome](https://mannes.tech/gridsome-tutorial/)
 - [The Answers to All your Questions about Gridsome Localization](https://phrase.com/blog/posts/gridsome-localization/)
-- [How to set up Tailwind CSS with gridsome
-](https://webdevetc.com/blog/tailwind-css-with-gridsome/)
-
+- [How to set up Tailwind CSS with gridsome](https://webdevetc.com/blog/tailwind-css-with-gridsome/)
+- [Gridsome, Tailwind, and other PostCSS](https://braincoke.fr/blog/2020/03/gridsome-tailwind-and-other-post-css/)
 
 ## Properties
 

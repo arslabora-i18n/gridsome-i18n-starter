@@ -1,15 +1,13 @@
 <template>
   <div class="layout prose prose-green prose-lg">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+    <header class="header">      
       <div>
         <locale-switcher></locale-switcher>
       </div>
       <nav class="nav">
         <g-link class="nav__link" :to="$tp('/')">Home</g-link>
         <g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>
+        <g-link class="nav__link" :to="$tp($t('/postcss'))">PostCSS</g-link>
       </nav>
     </header>
     <slot/>

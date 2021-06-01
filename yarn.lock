@@ -5708,6 +5708,14 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lost@^8.3.1:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/lost/-/lost-8.3.1.tgz#9fc6cbfff831264466cc30ab8fba5741945add7a"
+  integrity sha512-J+TgSVo9VVf4Y9lVGaI5DMN0BMqQTIabEJuEQGlK4vte+EZq9eDcvwGx9DfrkCUMqs0CvzAPE5dsnj18Zbjf6g==
+  dependencies:
+    object-assign "^4.1.1"
+    postcss "7.0.14"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -6841,6 +6849,13 @@ postcss-convert-values@^4.0.1:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
+postcss-currency@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-currency/-/postcss-currency-2.0.0.tgz#ed102fa49c427b31830300570f4246f2b3599f5c"
+  integrity sha512-d51OPdxkz8jZJuFnyG6VgYH6z0FJjcWGfVHEyLT7tds8DclJVreFTPDYtBIIIHnfzFXG7recDvZpRvq3vzNg5Q==
+  dependencies:
+    typographic-currency-db "^1.1.0"
+
 postcss-discard-comments@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-4.0.2.tgz#1fbabd2c246bff6aaad7997b2b0918f4d7af4033"
@@ -7170,6 +7185,15 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
+
+postcss@7.0.14:
+  version "7.0.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.14.tgz#4527ed6b1ca0d82c53ce5ec1a2041c2346bbd6e5"
+  integrity sha512-NsbD6XUUMZvBxtQAJuWDJeeC4QFsmWsfozWxCJPWf3M55K9iu2iMDaKqyoOdTJ1R4usBXuxlVFAIo8rZPQD4Bg==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
 
 postcss@^6.0.9:
   version "6.0.23"
@@ -8791,6 +8815,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typographic-currency-db@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/typographic-currency-db/-/typographic-currency-db-1.1.0.tgz#845571f26d42521ec2f5f9118085a7d25157715f"
+  integrity sha512-5jZUXM87e5iF/9+cWU4jSPmIEvwSYtDW0VY2jN7Ia3aRl5oEPs3seVAmLqb9PSvBaaZ+5ZpJSZkmabicb+1t4A==
 
 uglify-js@3.4.x:
   version "3.4.10"

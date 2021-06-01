@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container max-w-screen-md mx-auto px-5">
+    <div class="container max-w-screen-md mx-auto">
       <h1>{{ $t("titles.about-us") }}</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error

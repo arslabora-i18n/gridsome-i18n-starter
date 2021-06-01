@@ -7,15 +7,16 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "@tailwindcss/postcss7-compat": "^2.1.2",
-    "autoprefixer": "^9",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-i18n": "^1.6.0",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "gridsome-plugin-i18n": "^1.6.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.1.2",
     "@tailwindcss/typography": "^0.4.1",
-    "sirv-cli": "^1.0.12"
+    "autoprefixer": "^9",
+    "lost": "^8.3.1",
+    "postcss": "^7",
+    "sirv-cli": "^1.0.12",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

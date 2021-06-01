@@ -3,6 +3,9 @@ const i18n = require('./plugins/i18n')
 
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
+const lostgrid = require('lost')
+
+const pluginsList = [ tailwindcss, autoprefixer, lostgrid ]
 
 module.exports = {
   siteName: 'Gridsome i18n Boilerplate',
@@ -12,10 +15,7 @@ module.exports = {
   css: {
     loaderOptions: {
       postcss: {
-        plugins: [
-          tailwindcss,
-          autoprefixer
-        ]
+        plugins: pluginsList        
       }
     }
   }
