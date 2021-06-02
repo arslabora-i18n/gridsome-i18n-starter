@@ -6,9 +6,9 @@
       </div>
       <nav class="nav">
         <g-link class="nav__link" :to="$tp('/')">Home</g-link>
-        <g-link class="nav__link" :to="$tp($t('slug.about'))">About</g-link>
-        <g-link class="nav__link" :to="$tp($t('slug.postcss'))">PostCSS</g-link>
-        <g-link class="nav__link" :to="$tp($t('slug.blog'))">Blog</g-link>
+        <g-link class="nav__link" :to="$tp($t('ref.about'))">About</g-link>
+        <g-link class="nav__link" :to="$tp($t('ref.postcss'))">PostCSS</g-link>
+        <g-link class="nav__link" :to="$tp($t('ref.blog'))">Blog</g-link>
       </nav>
     </header>
     <slot />

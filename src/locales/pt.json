@@ -1,13 +1,16 @@
 {   
   "welcome": "Benvindo a Gridsome i18n!",
-  "slug": {
+  "message": "Esta  é uma bolierplate para Gridsome, preparada para ser usada como referência para soluções e ideas a respeito de i18n. A tua contribuição é benvinda!",  
+  "ref": {
     "home": "/",
     "about": "quem-somos",
     "postcss": "postcss",
-    "blog": "blog",
-    "blog/cats": "blog/gatos-sao-fofos"
+    "blog": "blog"
   },
   "titles": {
     "about-us": "Sobre nos"
+  },
+  "texts": {
+    "tree": "The source tree is organized in a way the you can store all your images and related documents in the same folder of your translations."
   }
 }

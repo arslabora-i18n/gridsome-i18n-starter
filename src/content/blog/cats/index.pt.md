@@ -1,8 +1,9 @@
 ---
 title: "Gatos são fofos!"
 locale: "pt"
+ref: "cats-are-cute"
 ---
 
 ## Gatos são seres excepcionais
 
-![Um gato fofo](./cat.jpg)
+![A cute cat](./cutecat.webp)

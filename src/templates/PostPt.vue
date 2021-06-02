@@ -10,6 +10,7 @@
 <page-query>
 query ($id: ID!) {
   post: postPt(id: $id) {
+    ref
     title
     content
   }

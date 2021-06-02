@@ -17,12 +17,14 @@ export default {
   },
   methods: {
     localeChanged() {
-      this.$router.push({
+      this.$router.push({        
+        // get the translated path,...
         path: this.$tp(
-          // get the translated path
-          this.$t("slug." + this.$context.slug, this.currentLocale), // using slugs translations
+          // ...using "ref" key translations,...
+          this.$t("ref." + this.$context.ref, this.currentLocale), 
+          // ...and set the new locale!
           this.currentLocale,
-          true
+          true          
         ),
       });
     },

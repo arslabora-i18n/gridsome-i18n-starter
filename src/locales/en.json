@@ -1,13 +1,16 @@
 {   
   "welcome": "Welcome to Gridsome i18n!",
-  "slug": {
+  "message": "This is a Gridsome boilerplate, prepared to be used as reference for i18n solutions and ideas. Your contribution is welcome!",  
+  "ref": {
     "home": "/",
     "about": "about-us",
     "postcss": "postcss",
-    "blog": "blog",
-    "blog/cats": "blog/cats-are-cute"
+    "blog": "blog"    
   },
   "titles": {
     "about-us": "About us"
+  },
+  "texts": {
+    "tree": "The source tree is organized in a way the you can store all your images and related documents in the same folder of your translations."
   }
 }

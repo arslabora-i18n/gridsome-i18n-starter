@@ -1,8 +1,9 @@
 ---
 title: "Gatti sono carinissimi!"
 locale: "it"
+ref: "cats-are-cute"
 ---
 
 ## Gatti sono essere eccezionali
 
-![Un gattino adorabile](./cat.jpg)
+![A cute cat](./cutecat.webp)

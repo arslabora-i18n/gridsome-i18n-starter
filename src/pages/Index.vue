@@ -6,17 +6,10 @@
       <h1>{{ $t("welcome") }}</h1>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-        excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
-        Dolores, aperiam non officia eos quod asperiores
+        {{ $t('message') }}
       </p>
-      <g-image src="~/assets/images/dolphins.jpg" width="900" />
-      <p>ab voluptatem voluptatem</p>
-      <p>
-        Sit velit vel autem autem ex dolor quam. At fuga ut veritatis sequi
-        optio rerum omnis odio. Minus sequi nisi odio et. Qui delectus nulla
-        explicabo odio aperiam unde pariatur.
-      </p>
+      <g-image src="~/assets/images/catty.jpg" width="900" />
+      
     </div>
 
     <div>
