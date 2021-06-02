@@ -1,5 +1,6 @@
 ---
 title: "Gatos são fofos!"
 locale: "pt"
-slug: "blog/cats"
 ---
+
+## Gatos são seres excepcionais

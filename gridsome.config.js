@@ -41,8 +41,8 @@ module.exports = {
     },
   ],
   templates: {
-    PostEn: '/en/blog/:slug',
-    PostIt: '/it/blog/:slug',
-    PostPt: '/pt/blog/:slug',
+    PostEn: '/en/blog/:title',
+    PostIt: '/it/blog/:title',
+    PostPt: '/pt/blog/:title',
   }
 }

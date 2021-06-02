@@ -26,7 +26,7 @@ module.exports = {
       context: {
         slug: 'blog'
       }
-    }
+    },
   ],
   "it-IT": [{
       path: '/it',

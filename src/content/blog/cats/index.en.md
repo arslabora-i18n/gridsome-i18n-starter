@@ -1,5 +1,6 @@
 ---
-title: "Cats are cutes!"
+title: "Cats are cute!"
 locale: "en"
-slug: "blog/cats"
 ---
+
+## Cats are lovely beings

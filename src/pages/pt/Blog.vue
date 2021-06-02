@@ -10,15 +10,12 @@
             v-for="post in $page.posts.edges"
             :key="post.id"
             class="post"
-            :to="post.node.locale + '/' + post.node.slug"
+            :to="post.node.path"
           >
             <div class="post">
               <h3>
                 <b>{{ post.node.title }}</b>
               </h3>
-              <p>Path: {{ post.node.path }}</p>
-              <p>Slug: {{ post.node.slug }}</p>
-              <p>Locale: {{ post.node.locale }}</p>
             </div>
           </g-link>
         </article>
@@ -33,8 +30,7 @@
 			edges {
 				node {
 					id
-          path
-          slug
+          path          
 					title
 					locale
           content
