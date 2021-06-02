@@ -22,7 +22,7 @@ module.exports = {
     },
     {
       path: '/en/blog',
-      component: './src/pages/Blog.vue',
+      component: './src/pages/en/Blog.vue',
       context: {
         slug: 'blog'
       }
@@ -51,7 +51,7 @@ module.exports = {
     },
     {
       path: '/it/blog',
-      component: './src/pages/Blog.vue',
+      component: './src/pages/it/Blog.vue',
       context: {
         slug: 'blog'
       }
@@ -80,7 +80,7 @@ module.exports = {
     },
     {
       path: '/pt/blog',
-      component: './src/pages/Blog.vue',
+      component: './src/pages/pt/Blog.vue',
       context: {
         slug: 'blog'
       }

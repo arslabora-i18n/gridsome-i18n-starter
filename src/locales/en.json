@@ -4,7 +4,8 @@
     "home": "/",
     "about": "about-us",
     "postcss": "postcss",
-    "blog": "blog"
+    "blog": "blog",
+    "blog/cats": "blog/cats-are-cute"
   },
   "titles": {
     "about-us": "About us"

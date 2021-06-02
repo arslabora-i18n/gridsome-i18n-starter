@@ -4,7 +4,8 @@
     "home": "/",
     "about": "chi-siamo",
     "postcss": "postcss",
-    "blog": "blog"
+    "blog": "blog",
+    "blog/cats": "blog/gatti-sono-carinissimi"
   },
   "titles": {
     "about-us": "Su di noi"

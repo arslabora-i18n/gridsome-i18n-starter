@@ -4,7 +4,8 @@
     "home": "/",
     "about": "quem-somos",
     "postcss": "postcss",
-    "blog": "blog"
+    "blog": "blog",
+    "blog/cats": "blog/gatos-sao-fofos"
   },
   "titles": {
     "about-us": "Sobre nos"
