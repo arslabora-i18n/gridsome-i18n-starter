@@ -5,4 +5,4 @@ locale: "it"
 
 ## Gatti sono essere eccezionali
 
-![Un gattino adorabile](http://placeimg.com/640/480/animals)
+![Un gattino adorabile](./cat.jpg)
