@@ -1,16 +1,17 @@
 <template>
   <div class="layout prose prose-green prose-lg">
-    <header class="header">      
+    <header class="header">
       <div>
         <locale-switcher></locale-switcher>
       </div>
       <nav class="nav">
         <g-link class="nav__link" :to="$tp('/')">Home</g-link>
-        <g-link class="nav__link" :to="$tp($t('/about'))">About</g-link>
-        <g-link class="nav__link" :to="$tp($t('/postcss'))">PostCSS</g-link>
+        <g-link class="nav__link" :to="$tp($t('slug.about'))">About</g-link>
+        <g-link class="nav__link" :to="$tp($t('slug.postcss'))">PostCSS</g-link>
+        <g-link class="nav__link" :to="$tp($t('slug.blog'))">Blog</g-link>
       </nav>
     </header>
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -23,19 +24,20 @@ query {
 </static-query>
 
 <script>
-import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
+import LocaleSwitcher from "@/components/LocaleSwitcher.vue";
 export default {
   components: {
     LocaleSwitcher,
   },
-}
+};
 </script>
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
 

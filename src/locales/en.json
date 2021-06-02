@@ -1,6 +1,11 @@
-{ 
-  "/about": "about-us",
+{   
   "welcome": "Welcome to Gridsome i18n!",
+  "slug": {
+    "home": "/",
+    "about": "about-us",
+    "postcss": "postcss",
+    "blog": "blog"
+  },
   "titles": {
     "about-us": "About us"
   }

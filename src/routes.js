@@ -1,71 +1,89 @@
 module.exports = {
-  "en-US": [
-    {
+  "en-US": [{
       path: '/en',
       component: './src/pages/Index.vue',
       context: {
-        slug: '/'
+        slug: 'home'
       }
     },
     {
       path: '/en/about-us/',
       component: './src/pages/About.vue',
       context: {
-        slug: '/about'
+        slug: 'about'
       }
     },
     {
       path: '/en/postcss/',
       component: './src/pages/PostCSS.vue',
       context: {
-        slug: '/postcss'
+        slug: 'postcss'
       }
     },
-  ],
-  "it-IT": [
     {
+      path: '/en/blog',
+      component: './src/pages/Blog.vue',
+      context: {
+        slug: 'blog'
+      }
+    }
+  ],
+  "it-IT": [{
       path: '/it',
       component: './src/pages/Index.vue',
       context: {
-        slug: '/'
+        slug: 'home'
       }
     },
     {
       path: '/it/chi-siamo/',
       component: './src/pages/About.vue',
       context: {
-        slug: '/about'
+        slug: 'about'
       }
     },
     {
       path: '/it/postcss/',
       component: './src/pages/PostCSS.vue',
       context: {
-        slug: '/postcss'
+        slug: 'postcss'
       }
     },
-  ],
-  "pt-BR": [
     {
+      path: '/it/blog',
+      component: './src/pages/Blog.vue',
+      context: {
+        slug: 'blog'
+      }
+    }
+  ],
+  "pt-BR": [{
       path: '/pt',
       component: './src/pages/Index.vue',
       context: {
-        slug: '/'
+        slug: 'home'
       }
     },
     {
       path: '/pt/quem-somos/',
       component: './src/pages/About.vue',
       context: {
-        slug: '/about'
+        slug: 'about'
       }
     },
     {
       path: '/pt/postcss/',
       component: './src/pages/PostCSS.vue',
       context: {
-        slug: '/postcss'
+        slug: 'postcss'
       }
     },
+    {
+      path: '/pt/blog',
+      component: './src/pages/Blog.vue',
+      context: {
+        slug: 'blog'
+      }
+    }
   ]
 }

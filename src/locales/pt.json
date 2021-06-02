@@ -1,6 +1,11 @@
-{ 
-  "/about": "quem-somos",
+{   
   "welcome": "Benvindo a Gridsome i18n!",
+  "slug": {
+    "home": "/",
+    "about": "quem-somos",
+    "postcss": "postcss",
+    "blog": "blog"
+  },
   "titles": {
     "about-us": "Sobre nos"
   }
