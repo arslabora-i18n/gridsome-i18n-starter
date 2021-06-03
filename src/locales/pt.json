@@ -6,12 +6,10 @@
     "about": "quem-somos",
     "postcss": "postcss",
     "blog": "blog",
-    "cats-are-cute": "blog/gatos-sao-fofos"
+    "cats-are-cute": "blog/gatos-sao-fofos",
+    "reasons-to-own-a-cat": "blog/razoes-para-se-ter-um-gato"
   },
   "titles": {
-    "about-us": "Sobre nos"
-  },
-  "texts": {
-    "tree": "The source tree is organized in a way the you can store all your images and related documents in the same folder of your translations."
+    "about-us": "Sobre esta boilerplate"
   }
 }

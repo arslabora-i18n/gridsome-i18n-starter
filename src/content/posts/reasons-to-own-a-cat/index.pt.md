@@ -1,7 +1,7 @@
 ---
 title: "Razões para se ter um gato"
 locale: "it"
-ref: "blog/reasons-to-own-a-cat/"
+ref: "reasons-to-own-a-cat"
 ---
 
 ## Deveria ter um gato. Mesmo

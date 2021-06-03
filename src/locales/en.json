@@ -6,12 +6,10 @@
     "about": "about-us",
     "postcss": "postcss",
     "blog": "blog",
-    "cats-are-cute": "blog/cats-are-cute"
+    "cats-are-cute": "blog/cats-are-cute",
+    "reasons-to-own-a-cat": "blog/reasons-to-own-a-cat"
   },
   "titles": {
-    "about-us": "About us"
-  },
-  "texts": {
-    "tree": "The source tree is organized in a way the you can store all your images and related documents in the same folder of your translations."
+    "about-us": "About this boilerplate"
   }
 }

@@ -22,27 +22,36 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'PostEn',
-        path: './src/content/blog/**/*.en.md',
+        path: './src/content/posts/**/*.en.md'
       },
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'PostIt',
-        path: './src/content/blog/**/*.it.md',
+        path: './src/content/posts/**/*.it.md'
       },
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'PostPt',
-        path: './src/content/blog/**/*.pt.md',
+        path: './src/content/posts/**/*.pt.md'
       },
     },
   ],
   templates: {
-    PostEn: '/en/blog/:title',
-    PostIt: '/it/blog/:title',
-    PostPt: '/pt/blog/:title',
+    PostEn: [{
+      path: '/en/blog/:title',
+      component: './src/templates/PostEn.vue'
+    }],
+    PostIt: [{
+      path: '/it/blog/:title',
+      component: './src/templates/PostIt.vue'
+    }],
+    PostPt: [{
+      path: '/pt/blog/:title',
+      component: './src/templates/PostPt.vue'
+    }]
   }
 }
