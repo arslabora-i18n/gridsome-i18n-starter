@@ -11,7 +11,7 @@ References:
 
 ## Properties
 
-This boilerplate uses the modification upon the work of @giuseppeaiello: it provide an extension of `$context`, with a `slug` property, so to link path translations.
+This boilerplate uses the i18n plugin by @daaru00, after some modifications upon the work of @giuseppeaiello: it provide an extension of `$context`, with a `slug` property, so to link path translations.
 
 The `i18n` plugin is configured so that the routes must be manually managed. This is very powerfull and quite vue-alike:
 
