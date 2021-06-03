@@ -16,3 +16,13 @@ query ($id: ID!) {
   }
 }
 </page-query>
+
+<script>
+import Layout from '~/layouts/Posts.vue'
+
+export default {
+  components: {
+    Layout
+  },  
+}
+</script>

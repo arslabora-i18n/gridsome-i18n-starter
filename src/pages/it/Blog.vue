@@ -30,6 +30,7 @@
 			edges {
 				node {
 					id
+          ref
           path          
 					title
 					locale

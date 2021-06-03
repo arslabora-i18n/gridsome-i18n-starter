@@ -30,6 +30,7 @@
 			edges {
 				node {
 					id
+          ref
           path          
 					title
 					locale
@@ -41,7 +42,7 @@
 </page-query>
 
 <script>
-export default {
+export default {  
   metaInfo: {
     title: "Blog",
   },

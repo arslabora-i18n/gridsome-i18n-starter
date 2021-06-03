@@ -2,7 +2,7 @@
 <Layout>
   <div>
     <h1 v-html="$page.post.title" />
-    <div v-html="$page.post.content" />
+    <div v-html="$page.post.content" />    
   </div>
   </Layout>
 </template>
@@ -16,3 +16,13 @@ query ($id: ID!) {
   }
 }
 </page-query>
+
+<script>
+import Layout from '~/layouts/Posts.vue'
+
+export default {
+  components: {
+    Layout
+  },  
+}
+</script>
