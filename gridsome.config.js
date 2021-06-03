@@ -1,5 +1,5 @@
 // Require i18n configuration
-const i18n = require('./plugins/i18n')
+const i18n = require('./src/plugins/i18n')
 
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
