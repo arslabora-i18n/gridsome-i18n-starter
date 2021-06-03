@@ -17,4 +17,19 @@ module.exports = function (api) {
   }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
+
+  api.chainWebpack(config => {
+    // allow for i18n block, as for single-file-component specifications
+    // https://kazupon.github.io/vue-i18n/guide/sfc.html#basic-usage
+    config.module
+      .rule("i18n")
+      .resourceQuery(/blockType=i18n/)
+      .type("javascript/auto")
+      .use("i18n")
+      .loader("@kazupon/vue-i18n-loader")
+      .end()
+      .use("yaml")
+      .loader("yaml-loader")
+      .end();
+  });
 }
