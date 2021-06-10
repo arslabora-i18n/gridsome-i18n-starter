@@ -5,18 +5,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({
-    addCollection
-  }) => {
+module.exports = function(api) {
+  api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
-
-  api.createPages(({
-    createPage
-  }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+  });
 
   api.chainWebpack(config => {
     // allow for i18n block, as for single-file-component specifications
@@ -32,4 +24,78 @@ module.exports = function (api) {
       .loader("yaml-loader")
       .end();
   });
-}
+
+  api.createPages(async ({ createPage, graphql }) => {
+    const { data } = await graphql(`
+      {
+        posts: allPost {
+          edges {
+            node {
+              id
+              ref
+              slug
+              path
+              title
+              locale
+              fileInfo {
+                name
+              }
+            }
+          }
+        }
+      }
+    `);
+
+      for (const {
+        node
+      } of data.posts.edges) {
+      const fileName = node.fileInfo.name.replace(`.${node.locale}`, "");
+
+      const {
+        data: dataPostsTranslations
+      } = await graphql(`{
+        posts: allPost(filter: {            
+            fileInfo: {
+              name: {
+                regex: "^${fileName}"
+              }
+            }
+          }) {
+          edges {
+            node {
+              id
+              ref
+              slug
+              path
+              locale              
+              fileInfo {
+                name
+              }
+            }
+          }
+        }
+      }`);
+
+      createPage({
+        path: `/${node.locale}` + `/blog` + `/${node.slug}/`,
+        component: "./src/templates/Post.vue",
+        context: {
+          id: node.id,
+          locale: node.locale,
+          translations: dataPostsTranslations.posts.edges.map(({
+            node
+          }) => ({
+            path: `${node.locale}` + `/blog` + `/${node.slug}/`,
+            locale: node.locale
+          }))
+        },
+        route: {
+          meta: {
+            locale: node.locale
+          }
+        }
+      });
+    }
+    //
+  });
+};

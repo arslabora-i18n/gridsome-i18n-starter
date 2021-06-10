@@ -20,11 +20,5 @@ module.exports = {
   plugins: [
     i18n,
     posts.en, posts.it, posts.pt
-  ],
-  templates: {
-    Post: [{
-      path: '/:locale/blog/:title',
-      component: './src/templates/Post.vue'
-    }]
-  }
+  ],  
 }
