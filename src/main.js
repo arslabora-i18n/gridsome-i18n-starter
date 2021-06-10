@@ -9,11 +9,11 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient, appOptions }) {
   
   // Allow for hot-reload of translations
-  appOptions.i18n.setLocaleMessage('en-US',
+  appOptions.i18n.setLocaleMessage('en',
   require('./locales/en.json'))
-  appOptions.i18n.setLocaleMessage('it-IT',
+  appOptions.i18n.setLocaleMessage('it',
   require('./locales/it.json'))  
-  appOptions.i18n.setLocaleMessage('pt-BR',
+  appOptions.i18n.setLocaleMessage('pt',
   require('./locales/pt.json'))  
   
   // Set default layout as a global component

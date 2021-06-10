@@ -1,8 +1,7 @@
 ---
 title: "Gatti sono carinissimi!"
-locale: "it-IT"
+locale: "it"
 ref: "cats-are-cute"
-slug: "gatti-sono-carinissimi"
 ---
 
 ## Gatti sono essere eccezionali

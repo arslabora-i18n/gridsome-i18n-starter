@@ -1,5 +1,5 @@
 module.exports = {
-  "en-US": [{
+  "en": [{
       path: '/en',
       component: './src/pages/Index.vue',
       context: {
@@ -22,13 +22,13 @@ module.exports = {
     },
     {
       path: '/en/blog',
-      component: './src/pages/en/Blog.vue',
+      component: './src/pages/Blog.vue',
       context: {
         ref: 'blog'
       }
     }
   ],
-  "it-IT": [{
+  "it": [{
       path: '/it',
       component: './src/pages/Index.vue',
       context: {
@@ -51,13 +51,13 @@ module.exports = {
     },
     {
       path: '/it/blog',
-      component: './src/pages/it/Blog.vue',
+      component: './src/pages/Blog.vue',
       context: {
         ref: 'blog'
       }
     }
   ],
-  "pt-BR": [{
+  "pt": [{
       path: '/pt',
       component: './src/pages/Index.vue',
       context: {
@@ -80,7 +80,7 @@ module.exports = {
     },
     {
       path: '/pt/blog',
-      component: './src/pages/pt/Blog.vue',
+      component: './src/pages/Blog.vue',
       context: {
         ref: 'blog'
       }

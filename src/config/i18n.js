@@ -2,17 +2,12 @@ module.exports = {
   use: "gridsome-plugin-i18n",
   options: {
     locales: [
-      'en-US',
-      'it-IT',
-      'pt-BR'
+      'en',
+      'it',
+      'pt'
     ],
-    pathAliases: {
-      'en-US': 'en',
-      'it-IT': 'it',
-      'pt-BR': 'pt'
-    },
-    fallbackLocale: 'en-US',
-    defaultLocale: 'en-US',
+    fallbackLocale: 'en',
+    defaultLocale: 'en',
     enablePathRewrite: true,
     rewriteDefaultLanguage: true,
     enablePathGeneration: false,

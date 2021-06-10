@@ -1,6 +1,6 @@
 ---
 title: "Razões para se ter um gato"
-locale: "it"
+locale: "pt"
 ref: "reasons-to-own-a-cat"
 ---
 
