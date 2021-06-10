@@ -10,7 +10,7 @@
             v-for="post in $page.posts.edges"
             :key="post.id"
             class="post"
-            :to="post.node.path"
+            :to="post.node.locale + `/blog/` + post.node.slug"
           >
             <div class="post">
               <h3>
@@ -31,6 +31,7 @@
 				node {
 					id
           ref
+          slug
           path          
 					title
 					locale

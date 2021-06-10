@@ -2,7 +2,7 @@
   <div class="layout prose prose-green prose-lg">
     <header class="header">
       <div>
-        <locale-switcher-posts></locale-switcher-posts>
+        <get-translations></get-translations>
       </div>
       <nav class="nav">
         <g-link class="nav__link" :to="$tp('/')">Home</g-link>
@@ -24,16 +24,17 @@ query {
 </static-query>
 
 <script>
-import LocaleSwitcherPosts from "@/components/LocaleSwitcherPosts.vue";
+import GetTranslations from "@/components/GetTranslations.vue";
 export default {
   components: {
-    LocaleSwitcherPosts,
+    GetTranslations,
   },
 };
 </script>
 
 <style>
-body {
+
+    GetTranslationsbody {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
