@@ -1,6 +1,7 @@
 {   
   "welcome": "Benvindo a Gridsome i18n!",
   "message": "Esta  é uma bolierplate para Gridsome, preparada para ser usada como referência para soluções e ideas a respeito de i18n. A tua contribuição é benvinda!",  
+  "wip": "Este 'e um trabalho em andamento!",
   "ref": {
     "home": "/",
     "about": "quem-somos",

@@ -5,9 +5,10 @@
 
       <h1>{{ $t("welcome") }}</h1>
 
-      <p>
-        {{ $t('message') }}
-      </p>
+      <p>{{ $t('message') }}</p>
+
+      <h3>{{ $t('wip') }}</h3>
+
       <g-image src="~/assets/images/catty.jpg" width="900" />
       
     </div>
