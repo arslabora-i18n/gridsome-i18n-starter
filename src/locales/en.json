@@ -1,7 +1,16 @@
-{ 
-  "/about": "about-us",
+{   
   "welcome": "Welcome to Gridsome i18n!",
+  "message": "This is a Gridsome boilerplate, prepared to be used as reference for i18n solutions and ideas. Your contribution is welcome!",  
+  "wip": "This is a work in progress!",
+  "ref": {
+    "home": "/",
+    "about": "about-us",
+    "postcss": "postcss",
+    "blog": "blog",
+    "cats-are-cute": "blog/cats-are-cute",
+    "reasons-to-own-a-cat": "blog/reasons-to-own-a-cat"
+  },
   "titles": {
-    "about-us": "About us"
+    "about-us": "About this boilerplate"
   }
 }

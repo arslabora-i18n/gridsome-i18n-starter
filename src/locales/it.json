@@ -1,7 +1,16 @@
-{ 
-  "/about": "chi-siamo",
+{   
   "welcome": "Benvenuto a Gridsome i18n!",
+  "message": "Questa è una bolierplate per Gridsome, preparata per essere usata come riferimento a soluzioni e idee riguardanti i18n. La tua contribuzione è benvenuta!",
+  "wip": "Questo `e un lavoro in corso!",
+  "ref": {
+    "home": "/",
+    "about": "chi-siamo",
+    "postcss": "postcss",
+    "blog": "blog",
+    "cats-are-cute": "blog/gatti-sono-carinissimi",
+    "reasons-to-own-a-cat": "blog/ragioni-per-avere-un-gatto"
+  },
   "titles": {
-    "about-us": "Su di noi"
+    "about-us": "Su questa boilerplate"
   }
 }
