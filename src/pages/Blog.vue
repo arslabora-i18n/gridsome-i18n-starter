@@ -4,7 +4,7 @@
       <section>
         <article>
           <h1 class="capitalize">{{ $t("blog") }}</h1>
-          <h3>Publications in English</h3>
+          <h3>{{ $t("subtitle") }}</h3>
           <hr />
           <g-link
             v-for="post in $page.posts.edges"
@@ -23,6 +23,20 @@
     </div>
   </Layout>
 </template>
+
+<i18n>
+{
+  "en": {
+    "subtitle": "Publications in English"
+  },
+  "it": {
+    "subtitle": "Pubblicazioni in Italiano"
+  },
+  "pt": {
+    "subtitle": "Publicações em Portugues"
+  }
+}
+</i18n>
 
 <page-query>
 	query ($locale:String) {
@@ -43,7 +57,7 @@
 </page-query>
 
 <script>
-export default {  
+export default {
   metaInfo: {
     title: "Blog",
   },

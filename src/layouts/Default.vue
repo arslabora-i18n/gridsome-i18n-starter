@@ -4,12 +4,9 @@
       <div>
         <locale-switcher></locale-switcher>
       </div>
-      <nav class="nav">
-        <g-link class="nav__link" :to="$tp('/')">Home</g-link>
-        <g-link class="nav__link" :to="$tp($t('ref.about'))">About</g-link>
-        <g-link class="nav__link" :to="$tp($t('ref.postcss'))">PostCSS</g-link>
-        <g-link class="nav__link" :to="$tp($t('ref.blog'))">Blog</g-link>
-      </nav>
+      <div>
+        <menu-main></menu-main>
+      </div>
     </header>
     <slot />
   </div>
@@ -25,9 +22,11 @@ query {
 
 <script>
 import LocaleSwitcher from "@/components/LocaleSwitcher.vue";
+import MenuMain from "@/components/Menu/Main.vue";
 export default {
   components: {
     LocaleSwitcher,
+    MenuMain,
   },
 };
 </script>

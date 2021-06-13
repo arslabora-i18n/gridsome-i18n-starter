@@ -1,9 +1,9 @@
 <template>
-<Layout>
-  <div>
-    <h1 v-html="$page.post.title" />
-    <div v-html="$page.post.content" />        
-  </div>
+  <Layout>
+    <div>
+      <h1 v-html="$page.post.title" />
+      <div v-html="$page.post.content" />
+    </div>
   </Layout>
 </template>
 
@@ -18,11 +18,29 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import Layout from '~/layouts/Posts.vue'
+import Layout from "~/layouts/Posts.vue";
 
 export default {
   components: {
-    Layout
-  },  
-}
+    Layout,
+  },
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          // name: "description",
+          // content: this.$page.post.description,
+        },
+      ],
+    };
+  },
+  computed: {
+    translations() {
+      return this.$context.translations.filter(
+        (translation) => translation.locale !== this.$context.locale
+      );
+    },
+  },
+};
 </script>
